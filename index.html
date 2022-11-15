@@ -14,7 +14,7 @@
 			<img class="logo-image" src="#" alt="Логотип компании Девайс.">
 		</a>
 		<form class="header-form-search" action="https://echo.htmlacademy.ru/" method="get">
-			<label for="search-site"></label>
+			<label class="visually-hidden" for="search-site">Поле поиска по сайту</label>
 			<input class="header-field-search" id="search-site" name="search-site" type="text" placeholder="Поиск по сайту">
 			<button class="header-button button" type="submit">Найти</button>
 		</form>
@@ -186,6 +186,18 @@
 
 			
 		</section>
+		<section class="subscribe">
+			<h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+			<p class="subscribe-text">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, 
+				а также акции, спецпредложения и вот это вот всё.
+			</p>
+			<form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+				<label class="visually-hidden" for="subscribe-form"></label>
+				<input class="subscribe-email" type="email" id="subscribe-form" name="subscribe-form" placeholder="Ваш e-mail" required>
+				<button class="subscribe-button" type="submit">Подписаться</button>
+			</form>
+			<span class="subscribe-check">Это бесплатно</span>
+		</section>
 
 
 
@@ -203,7 +215,6 @@
 
 
 
-		<section></section>
 		<section></section>
 	</main>
 
