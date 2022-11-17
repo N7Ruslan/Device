@@ -130,7 +130,7 @@
 					<ul class="filter-presence">
 						<li class="filter-presence-item">
 							<label class="control">
-								<input class="control-radio" type="radio" name="presence-bluetooth" value="yes">
+								<input class="control-radio" type="radio" name="presence-bluetooth" value="yes" checked>
 								<span class="control-label">Есть</span>
 							</label>
 						</li>
@@ -145,6 +145,27 @@
 
 				<button class="filter-button" type="submit">Показать</button>
 			</form>
+		</section>
+		<section class="filter-sort">
+			<h2 class="visually-hidden">Результат сортировки</h2>
+			<p class="filter-sort-result">сортировка:</p>
+			<select class="filter-select-control" aria-label="Сортировка">
+				<option value="cheaper">Сначала дешевое</option>
+				<option value="expensive">Сначала дорогое</option>
+				<option value="popular" selected>Популярные</option>
+			</select>>
+			<ul class="filter-sort-list">
+				<li class="filter-sort-item">
+					<a class="filter-sort-link" href="#">
+						<span class="visually-hidden">Показать с начало</span>
+					</a>
+				</li>
+				<li class="filter-sort-item">
+					<a class="filter-sort-link" href="#">
+						<span class="visually-hidden">Показать с конца</span>
+					</a>
+				</li>
+			</ul>
 		</section>
 	</main>
 
