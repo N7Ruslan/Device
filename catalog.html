@@ -19,7 +19,8 @@
 		<nav class="navigation">
 			<ul class="navigation-user">
 				<li class="navigation-user-item">
-					<a class="navigation-user-link" href="#">Войти</a>
+					<span class="navigation-user-authentication">Коля Петухов</span>
+					<a class="navigation-user-link" href="#">Выйти</a>
 				</li>
 				<li class="navigation-user-item">
 					<a class="navigation-user-link" href="#">Сравнить</a>
@@ -50,7 +51,7 @@
 			<h1 class="inner-header-title">Моноподы для селфи</h1>
 			<ul class="breadcrumbs-list">
 				<li class="breadcrumbs-item">
-					<a class="breadcrumbs-link" href="#">Главная</a>
+					<a class="breadcrumbs-link" href="index.html">Главная</a>
 				</li>
 				<li class="breadcrumbs-item">
 					<a class="breadcrumbs-link" href="#">Каталог товаров</a>
@@ -60,6 +61,90 @@
 				</li>
 			</ul>
 		</header>
+		<section class="filter-gadget">
+			<h2 class="filter-title">фильтр:</h2>
+			<form class="filter-form-search" action="https://echo.htmlacademy.ru/" method="get">
+				<fieldset class="filter-price">
+					<legend class="filter-subtitle">Стоимость</legend>
+					<div class="rang">
+						<div class="range-scale">
+							<div class="range-bar">
+								<button class="range-toggle toggle-min" type="button">
+									<span class="visually-hidden">Изменить минимальную цену.</span>
+								</button>
+								<button class="range-toggle toggle-max" type="button">
+									<span class="visually-hidden">Изменить максимальную цену.</span>
+								</button>
+							</div>
+						</div>
+						<div class="range-wrrapers-inputs">
+							<label class="filter-label range-from" for="input-from">
+									<input class="range-input range-min" type="number" id="input-from" name="min-price" value="0">
+							</label>
+							<label class="filter-label range-to" for="input-to">
+									<input class="range-input range-max" type="number" id="input-to" name="max-price" value="5000">
+							</label>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset class="filter-color">
+					<legend class="filter-subtitle">Цвет</legend>
+					<ul class="filter-list">
+						<li class="filter-item">
+							<label class="control">
+								<input class="control-check" type="checkbox" name="color-black" checked>
+								<span class="control-label">Черный</span>
+							</label>
+						</li>
+						<li class="filter-item">
+							<label class="control">
+								<input class="control-check" type="checkbox" name="color-white" checked>
+								<span class="control-label">Белый</span>
+							</label>
+						</li>
+						<li class="filter-item">
+							<label class="control">
+								<input class="control-check" type="checkbox" name="color-blue">
+								<span class="control-label">Синий</span>
+							</label>
+						</li>
+						<li class="filter-item">
+							<label class="control">
+								<input class="control-check" type="checkbox" name="color-red">
+								<span class="control-label">Красный</span>
+							</label>
+						</li>
+						<li class="filter-item">
+							<label class="control">
+								<input class="control-check" type="checkbox" name="color-pink">
+								<span class="control-label">Розовый</span>
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset class="filter-bluetooth">
+					<legend class="filter-subtitle" lang="en">Bluetooth</legend>
+					<ul class="filter-presence">
+						<li class="filter-presence-item">
+							<label class="control">
+								<input class="control-radio" type="radio" name="presence-bluetooth" value="yes">
+								<span class="control-label">Есть</span>
+							</label>
+						</li>
+						<li class="filter-presence-item">
+							<label class="control">
+								<input class="control-radio" type="radio" name="presence-bluetooth" value="no">
+								<span class="control-label">Нет</span>
+							</label>
+						</li>
+					</ul> 
+				</fieldset>
+
+				<button class="filter-button" type="submit">Показать</button>
+			</form>
+		</section>
 	</main>
 
 	<footer class="page-footer">
